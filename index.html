@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Message for Tanaya 💕</title>
+    <meta name="description" content="A special love letter for Tanaya">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background effects -->
+    <div class="stars"></div>
+    <div class="floating-elements"></div>
+
+    <!-- Screen 1: Elegant introduction -->
+    <div class="screen active" id="screen1">
+        <div class="content-wrapper">
+            <div class="card elegant-card">
+                <div class="card-header">
+                    <div class="time-display" id="timeDisplay"></div>
+                    <h1 class="elegant-title">Good Morning ☀️</h1>
+                </div>
+                <p class="name-display">Tanaya</p>
+                <p class="subtitle">A moment just for you...</p>
+                <div class="button-container">
+                    <button class="btn btn-elegant" onclick="checkMood()">Let's Begin →</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Screen 2: Mood check -->
+    <div class="screen" id="screen2">
+        <div class="content-wrapper">
+            <div class="card">
+                <h2 class="mood-question">How are you feeling today?</h2>
+                <div class="mood-buttons">
+                    <button class="mood-btn feeling-good" onclick="handleGood()">
+                        <span class="emoji">🥰</span>
+                        <span class="text">I'm doing great!</span>
+                    </button>
+                    <button class="mood-btn feeling-not-good" onclick="handleNotGood()">
+                        <span class="emoji">😔</span>
+                        <span class="text">Could be better</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Screen 3: Support message -->
+    <div class="screen" id="screen3">
+        <div class="content-wrapper">
+            <div class="card support-card">
+                <div class="emoji-large">💙</div>
+                <h2>Hey beautiful...</h2>
+                <p class="support-text">I'm always here for you. No matter what.</p>
+                <p class="phone-label">Need to talk?</p>
+                <p class="phone-number">📞 Call Alex: 0792621189</p>
+                <button class="btn btn-elegant" onclick="continueJourney()">I'm ready →</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Screen 4: The reveal -->
+    <div class="screen" id="screen4">
+        <div class="content-wrapper">
+            <div class="card reveal-card">
+                <div class="reveal-animation">
+                    <div class="reveal-circle"></div>
+                    <h2 class="reveal-text">I have something special to share with you...</h2>
+                </div>
+                <button class="btn btn-elegant" onclick="buildSuspense()">Show me ✨</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Screen 5: Suspense builder -->
+    <div class="screen" id="screen5">
+        <div class="content-wrapper">
+            <div class="card suspense-card">
+                <div class="suspense-message" id="suspenseMsg">Get ready...</div>
+                <div class="pulse-dot"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Screen 6: Main love letter -->
+    <div class="screen" id="screen6">
+        <div class="content-wrapper">
+            <div class="card love-card">
+                <h2 class="love-title">Hey beautiful 😊</h2>
+                
+                <div class="love-sections">
+                    <div class="love-section">
+                        <p>I just wanted to take a moment to thank you for the days we've vibed together, the laughs we've shared, and the smiles you've brought into my life. 💫 The memories we've already made mean a lot to me, and honestly, every conversation with you makes my day  better. 🌟</p>
+                    </div>
+
+                    <div class="love-section">
+                        <p>I just want you to know that I'm here to stay. 💚 Through the good days and the tough ones too. I'll always support you, listen to you, and stand by you. 🤝 You can count on me, always.</p>
+                    </div>
+
+                    <div class="love-section final-section">
+                        <p>And please never forget this ... you are beautiful, amazing, and truly special to me. 👑     i`m so lucky to have   you in my life,  ✨ Keep smiling, because that smile of yours can light up even the darkest day. </p>
+                    </div>
+                </div>
+
+                <p class="signature">— from Alexander😊 </p>
+                
+                <button class="btn btn-elegant" onclick="continueToGame()">Continue →</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Screen 7: The game -->
+    <div class="screen" id="screen7">
+        <div class="content-wrapper">
+            <div class="card game-card">
+                <h2 class="game-question" id="gameQuestion">One more thing...</h2>
+                <div class="game-button-container">
+                    <button class="btn btn-yes" onclick="handleGameYes()">YES 💚</button>
+                    <button class="btn btn-evasive" id="evasiveBtn" onclick="handleGameNo()">Oops 😜</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Screen 8: Final message -->
+    <div class="screen" id="screen8">
+        <div class="content-wrapper">
+            <div class="card final-card">
+                <div class="confetti-trigger"></div>
+                <h1 class="final-title">You're Everything 💕</h1>
+                <p class="final-message">
+                    Every morning I get to say "Good morning, Tanaya" is a blessing. 
+                    Thank you for everything.
+                </p>
+                <p class="final-closing">Always yours,<br>Alex 🌹</p>
+                <button class="btn btn-elegant" onclick="finalize()">Close our moment</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
